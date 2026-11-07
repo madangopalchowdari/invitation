@@ -1,0 +1,49 @@
+Publish the invitation with Cloudflare Tunnel
+==============================================
+
+Cloudflare Tunnel works behind CGNAT. No router port forwarding, public
+NAS IP, or DSM Let's Encrypt certificate is needed. The public connection
+uses HTTPS at Cloudflare; cloudflared connects privately to invitation:3000.
+
+1. Add deepayashovardhan.space as a site in Cloudflare. At GoDaddy, change
+   the domain's nameservers to the two Cloudflare nameservers assigned to
+   your site. Do not use GoDaddy's Connect My Site wizard. Wait until
+   Cloudflare reports the site as Active.
+2. In Cloudflare Zero Trust, create a Cloudflare Tunnel using the
+   cloudflared connector. Copy the tunnel token from the connector setup.
+   Treat it as a secret; do not put it in GitHub or share it.
+3. In the tunnel's Public Hostnames/routes, add:
+   Hostname: invite.deepayashovardhan.space
+   Service:  http://invitation:3000
+   Cloudflare creates the tunnel DNS route. Remove the old GoDaddy A record
+   for invite after Cloudflare DNS is active; do not point it to 10.x or
+   192.168.x addresses.
+4. Back up the NAS project's .env and RSVP folder. Keep the existing
+   /volume1/docker/invitation-nas/rsvp-data folder and the music file.
+   Replace the exposed RSVP admin token with a new random secret.
+5. In the NAS project's private .env, set:
+   NEXT_PUBLIC_SITE_URL=https://invite.deepayashovardhan.space
+   RSVP_ADMIN_TOKEN=<new private random secret>
+   CLOUDFLARE_TUNNEL_TOKEN=<tunnel token>
+   Keep the values private. Use deploy/nas.env.example as a key reference.
+6. Extract this package over /volume1/docker/invitation-nas. Do not delete
+   .env or rsvp-data. The included compose.yaml has a cloudflared service
+   and keeps the existing RSVP and read-only music mounts.
+7. In Container Manager, rebuild and recreate the existing project so the
+   public URL is embedded in the Next.js build and cloudflared starts.
+   Or from SSH, use the existing project name:
+   docker compose -p YOUR_EXISTING_PROJECT_NAME build --no-cache invitation
+   docker compose -p YOUR_EXISTING_PROJECT_NAME up -d --force-recreate
+   Do not use down -v or delete the RSVP data folder.
+8. Disable/remove any router port-forwarding rules for 80, 443, or 3000.
+   The tunnel is outbound-only. Do not expose DSM management ports.
+9. Test https://invite.deepayashovardhan.space on a phone using cellular
+   data. Test RSVP and music, then remove any test RSVP.
+
+Music remains NAS-only:
+  NAS folder:      /volume1/wedding-music/music
+  Container mount: /music (read-only)
+  File:            /music/Kalyanam-Vaibhogam.mp3
+
+Only serve music recordings you are authorized to share. Anyone who can
+access the public invitation can listen to or download the streamed audio.

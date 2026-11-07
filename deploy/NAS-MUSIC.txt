@@ -1,0 +1,18 @@
+NAS-only background music
+-------------------------
+Keep the authorized MP3 outside the Git repository and public application
+folder. The NAS Compose file mounts the music folder read-only at /music.
+
+For this invitation, the expected path is:
+  NAS folder:      /volume1/wedding-music/music
+  Container file:  /music/Kalyanam-Vaibhogam.mp3
+  Environment:     NAS_MUSIC_FILE=/music/Kalyanam-Vaibhogam.mp3
+
+Grant the container user UID 1000 permission to traverse parent folders
+and read the file. The /api/music endpoint supports byte ranges for seeking.
+The player starts at 0:05, crossfades near the end, and shows only a sound
+button. Browser autoplay rules may require the visitor's initial tap.
+
+The recording is excluded from Git, Docker build context, and deployment
+archives. NAS-only storage is not DRM; anyone with access to the invitation
+can listen to or download the streamed audio.

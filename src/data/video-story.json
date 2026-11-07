@@ -1,0 +1,80 @@
+[
+  {
+    "id": "blessings",
+    "timestamp": 3.8,
+    "label": ["A WARM INVITATION FROM OUR FAMILY", "మా కుటుంబ సాదర ఆహ్వానము"],
+    "title": ["With grateful hearts, a gentle invitation.", "మీ రాకను కోరుతూ, సాదర ఆహ్వానము."],
+    "body": [
+      "With the grace of Sri Sita Ramachandra Swamy and the blessings of our elders, we invite you to our daughter Deepa's wedding with Yashovardhan. As they take this gentle step into a shared life, may your presence and blessings lend warmth to their beginning.",
+      "శ్రీ సీతారామచంద్ర స్వామి కృపతో, పెద్దల ఆశీస్సులతో మా కుమార్తె దీప వివాహము యశోవర్ధన్ గారితో జరుపుచున్న శుభసందర్భమున మిమ్ములను సాదరముగా ఆహ్వానించుచున్నాము. మీరు సకుటుంబ సమేతముగా విచ్చేసి, వధూవరులను ఆశీర్వదింపవలెనని వినయపూర్వకముగా కోరుచున్నాము."
+    ],
+    "word": ["The blessings", "మంగళాశీస్సులు"],
+    "alt": "Original invitation frame with the sacred wedding of Sita and Rama, hanging brass lamps, banana leaves, and the family invocation"
+  },
+  {
+    "id": "yashovardhan",
+    "timestamp": 14.5,
+    "label": ["YASHOVARDHAN · THE GROOM", "యశోవర్ధన్ · వరుడు"],
+    "title": ["An open door, a place in our hearts.", "యశోవర్ధన్ గారికి ఆత్మీయ స్వాగతము."],
+    "body": [
+      "We welcome Yashovardhan into our family with affection and an open heart. Our prayer for him and Deepa is simple: may kindness guide their words, patience steady their steps, and respect give their love room to grow. We humbly seek your blessings for them both.",
+      "మా కుమార్తె దీపతో దాంపత్య జీవితమును ఆరంభించనున్న యశోవర్ధన్ గారిని మా కుటుంబములోనికి ఆప్యాయముగా ఆహ్వానించుచున్నాము. పరస్పర గౌరవముతోను, మంచిమనసుతోను వారి జీవనము సుఖశాంతులతో సాగవలెనని కోరుకొనుచున్నాము. వారిరువురికి మీ ఆశీస్సులు తోడగవలెనని మా ప్రార్థన."
+    ],
+    "word": ["Yashovardhan", "యశోవర్ధన్"],
+    "alt": "Original video frame introducing Yashovardhan, with his smiling portrait in a gold arch and the groom's Telugu invitation text"
+  },
+  {
+    "id": "deepa",
+    "timestamp": 21,
+    "label": ["DEEPA · THE BRIDE", "దీప · వధువు"],
+    "title": ["A parent's prayer, softly spoken.", "మా ప్రియ కుమార్తె దీప."],
+    "body": [
+      "As our daughter Deepa begins life with Yashovardhan, we send with her the simplest of prayers: may their home know kindness, their days hold understanding, and their hearts find rest in one another. We would be grateful for your blessings as they begin.",
+      "మా కుమార్తె దీప తన జీవితములో మరొక అడుగు వేయబోవుచున్నది. ఆమెయు యశోవర్ధన్ గారును పరస్పర అవగాహనతో, ఆప్యాయతతో సంతోషముగా జీవించవలెననునదే తల్లిదండ్రులమైన మా కోరిక. ఈ శుభవేళ మీ సాన్నిధ్యమును, ఆశీస్సులను మనసారా కోరుచున్నాము."
+    ],
+    "word": ["Deepa", "దీప"],
+    "alt": "Original video frame introducing Deepa in her mint-green saree and purple blouse, beside the bride's Telugu family details"
+  },
+  {
+    "id": "together",
+    "timestamp": 26.5,
+    "label": [
+      "DEEPA & YASHOVARDHAN · WITH OUR BLESSINGS",
+      "దీప, యశోవర్ధన్ · మనసారా దీవించుదుము"
+    ],
+    "title": [
+      "May their laughter linger.",
+      "ఒకరికి ఒకరు తోడుగా నిలువవలెనని."
+    ],
+    "body": [
+      "In these engagement photographs, their smiles rest side by side. To us, they are small promises of the warmth we hope will fill their home. May Deepa and Yashovardhan keep making room for one another, through every season of the life ahead.",
+      "దీప, యశోవర్ధన్ నిశ్చితార్థపు ఈ మధురస్మృతులను మీతో పంచుకొనుట మాకెంతో సంతోషము. వారిరువురిని కలసి చూచిన వేళ మనసుకు కలుగు ఆనందము మాటలలో చెప్పలేనిది. ఈ ఆప్యాయత వారి జీవితమున కలకాలము నిలువవలెనని కోరుచున్నాము."
+    ],
+    "word": ["Together", "అనురాగసంగమము"],
+    "alt": "Original invitation frame showing Deepa and Yashovardhan together in a gold arch with their names and a Telugu invitation to their wedding"
+  },
+  {
+    "id": "wedding",
+    "timestamp": 33,
+    "label": ["20 NOVEMBER 2026 · THE WEDDING", "20 నవంబర్ 2026 · శుభవివాహం"],
+    "title": ["A blessed hour, a shared tomorrow.", "వారి శుభవివాహమునకు విచ్చేయవలెను."],
+    "body": [
+      "On Friday, 20 November 2026, in Davangere, our daughter Deepa and Yashovardhan will begin their married life. The muhurtham is at 9:22 PM IST. Beneath the blessings of our elders, two lives will find a shared path. Please be with us to bless their first steps.",
+      "పెద్దల ఆశీస్సులతో మా కుమార్తె దీప వివాహము యశోవర్ధన్ గారితో 2026 నవంబర్ 20, శుక్రవారం, దావణగెరెలో జరుప నిశ్చయించినాము. రాత్రి 9:22 గంటలకు సుముహూర్తము. ఈ శుభకార్యమునకు మీరు విచ్చేసి వధూవరులను ఆశీర్వదించినచో, మాకెంతో సంతోషము కలుగును."
+    ],
+    "word": ["The sacred promise", "మాంగల్యబంధము"],
+    "alt": "Original video frame with traditional Telugu wedding ceremony artwork and the muhurtham date and time"
+  },
+  {
+    "id": "invitation",
+    "timestamp": 63,
+    "label": ["WITH LOVE · YOU'RE INVITED", "సప్రేమ పూర్వక శుభాహ్వానము"],
+    "title": ["Our happiness has a place for you.", "మీ రాకతో మా ఆనందము పరిపూర్ణము."],
+    "body": [
+      "Come with your family, share a meal, and bring the affection that makes a gathering feel like home. Dinner begins at 7:30 PM IST, and the muhurtham is at 9:22 PM. Your presence and blessings for Deepa and Yashovardhan would be a gift we will hold close.",
+      "మీరు సకుటుంబ సమేతముగా విచ్చేసి, మా కుమార్తె వివాహ సంతోషములో పాలుపంచుకొనవలెనని సాదరముగా కోరుచున్నాము. రాత్రి 7:30 గంటల నుండి విందు, రాత్రి 9:22 గంటలకు సుముహూర్తము. దీప, యశోవర్ధన్‌లను మనసారా దీవించి, మా ఆతిథ్యమును స్వీకరింపవలెనని ప్రార్థన."
+    ],
+    "word": ["Save the date", "శుభాహ్వానము"],
+    "alt": "The original film's final Save the Date frame, with a floral wreath, Deepa and Yashovardhan's names, and 20 November 2026"
+  }
+]

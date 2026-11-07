@@ -1,0 +1,43 @@
+Deepa & Yashovardhan - NAS deployment
+
+RSVP preservation
+-----------------
+Your guest responses must remain in a private folder outside this project.
+The app updates guest-list.json and guest-list.xlsx inside that folder.
+Build cleanup removes only .next and tsconfig.tsbuildinfo. It does not
+remove RSVP storage, photographs, videos, or environment files.
+Never place RSVP_STORAGE_DIR inside .next or a build staging folder.
+
+Deployment
+----------
+1. Extract invitation-nas.tar.gz into a project folder on the NAS.
+2. Use Docker/Container Manager with Docker Compose v2.
+3. Copy deploy/nas.env.example to .env inside the project folder.
+4. Set your public HTTPS URL, private RSVP_NAS_DIR, and a long random
+   RSVP_ADMIN_TOKEN in .env. Never share the token with guests.
+5. Create the private RSVP folder. Grant container user UID 1000 write
+   access to that folder only; do not use a public website folder.
+6. Run: docker compose up -d --build
+   The NAS builds a Linux image for its own processor architecture.
+7. Configure your NAS HTTPS reverse proxy to http://127.0.0.1:3000.
+   For an existing Nginx HTTPS server block, use the settings in
+   deploy/nginx-location.conf. TLS certificates stay managed by the NAS.
+   Do not expose the app's port 3000 directly to the internet.
+8. Test an RSVP from your public URL.
+9. Open /rsvp-admin with your private RSVP_ADMIN_TOKEN to download Excel.
+
+Updates
+-------
+Keep the same .env and RSVP_NAS_DIR across updates. Replace only project
+files, then run docker compose up -d --build. Existing RSVPs remain in
+the mounted private folder. Back up that folder through your NAS tools.
+
+Build this deployment archive again with: npm run build:nas
+Requires Docker with a Linux engine and the tar command. It cleans build
+cache inside the isolated Linux build, tests the build, and packages the
+source plus prepared media. No private RSVP records are in the archive.
+The archive deliberately contains no Windows node_modules: your NAS
+builds the container locally for the correct processor architecture.
+
+This is a Next.js server application, not a static HTML website. Copying
+only public files into Nginx will not provide RSVP collection or exports.
